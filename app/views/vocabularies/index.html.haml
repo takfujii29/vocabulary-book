@@ -1,0 +1,5 @@
+.list
+  - @vocabularies.each do |v|
+    = link_to "#{v.title}", vocabulary_path(v.id)
+.new
+  = link_to "新規登録", new_vocabulary_path
