@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+.main{
+  width: 100vw;
+  overflow-x: scroll;
+}
+a{
+  display: block;
+  width: 200px;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: blue;
+  margin-top: 10px;
+}
+.lists {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
