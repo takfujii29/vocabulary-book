@@ -1,0 +1,5 @@
+= @vocabulary.title
+= @vocabulary.content
+= @vocabulary.genre.name
+= link_to '編集', edit_vocabulary_path(@vocabulary)
+= link_to '削除', @vocabulary, method: :delete

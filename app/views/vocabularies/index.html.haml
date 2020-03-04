@@ -1,0 +1,59 @@
+.main
+  .new
+    = link_to "新規登録", new_vocabulary_path
+  .lists
+    .list
+      %h3 HTML
+      - @vocabularies.each do |v|
+        -if v.genre_id == 1
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 CSS
+      - @vocabularies.each do |v|
+        -if v.genre_id == 2
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 Ruby
+      - @vocabularies.each do |v|
+        -if v.genre_id == 3
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 JavaScript
+      - @vocabularies.each do |v|
+        -if v.genre_id == 4
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 linux
+      - @vocabularies.each do |v|
+        -if v.genre_id == 5
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 RSpec
+      - @vocabularies.each do |v|
+        -if v.genre_id == 6
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 C++
+      - @vocabularies.each do |v|
+        -if v.genre_id == 7
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 PHP
+      - @vocabularies.each do |v|
+        -if v.genre_id == 8
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 Java
+      - @vocabularies.each do |v|
+        -if v.genre_id == 9
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 Python
+      - @vocabularies.each do |v|
+        -if v.genre_id == 10
+          = link_to "#{v.title}", vocabulary_path(v.id)
+    .list
+      %h3 その他
+      - @vocabularies.each do |v|
+        -if v.genre_id == 11
+          = link_to "#{v.title}", vocabulary_path(v.id)
