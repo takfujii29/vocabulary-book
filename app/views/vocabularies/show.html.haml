@@ -1,5 +1,14 @@
-= @vocabulary.title
-= @vocabulary.content
-= @vocabulary.genre.name
-= link_to '編集', edit_vocabulary_path(@vocabulary)
-= link_to '削除', @vocabulary, method: :delete
+.show
+  .title
+    %h4 タイトル
+    = @vocabulary.title
+  .content
+    %h4 説明
+    = @vocabulary.content
+  .genre
+    %h4 ジャンル
+    = @vocabulary.genre.name
+  .link
+    = link_to '編集', edit_vocabulary_path(@vocabulary)
+    = link_to '削除', @vocabulary, method: :delete
+    = link_to '戻る', root_path

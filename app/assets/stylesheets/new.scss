@@ -1,0 +1,19 @@
+.form {
+  height: 100vh;
+  width: 50vw;
+  min-width: 540px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lightgray;
+  .text_field {
+    box-sizing: border-box;
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    border: none;
+  }
+  .text_area {
+    height: 300px;
+    width: 500px;
+  }
+}
