@@ -4,56 +4,67 @@
   .lists
     .list
       %h3 HTML
+      %h4 登録数：#{@html.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 1
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
       %h3 CSS
+      %h4 登録数：#{@css.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 2
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
       %h3 Ruby
+      %h4 登録数：#{@ruby.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 3
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
       %h3 JavaScript
+      %h4 登録数：#{@javascript.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 4
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
       %h3 linux
+      %h4 登録数：#{@linux.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 5
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
       %h3 RSpec
+      %h4 登録数：#{@rspec.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 6
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
-      %h3 C++
+      %h3 C
+      %h4 登録数：#{@c.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 7
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
       %h3 PHP
+      %h4 登録数：#{@php.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 8
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
       %h3 Java
+      %h4 登録数：#{@java.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 9
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
       %h3 Python
+      %h4 登録数：#{@python.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 10
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"
     .list
       %h3 その他
+      %h4 登録数：#{@other.count}
       - @vocabularies.each do |v|
         -if v.genre_id == 11
           = link_to "#{v.title}", vocabulary_path(v.id), class: "word"

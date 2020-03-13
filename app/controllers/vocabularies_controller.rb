@@ -1,6 +1,17 @@
 class VocabulariesController < ApplicationController
   def index
-    @vocabularies = Vocabulary.all
+    @vocabularies = Vocabulary.all.order('title ASC')
+    @html = Vocabulary.where(genre_id: 1)
+    @css = Vocabulary.where(genre_id: 2)
+    @ruby = Vocabulary.where(genre_id: 3)
+    @javascript = Vocabulary.where(genre_id: 4)
+    @linux = Vocabulary.where(genre_id: 5)
+    @rspec = Vocabulary.where(genre_id: 6)
+    @c = Vocabulary.where(genre_id: 7)
+    @php = Vocabulary.where(genre_id: 8)
+    @java = Vocabulary.where(genre_id: 9)
+    @python = Vocabulary.where(genre_id: 10)
+    @other = Vocabulary.where(genre_id: 11)
   end
 
   def new
