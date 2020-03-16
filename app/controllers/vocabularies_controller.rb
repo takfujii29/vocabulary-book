@@ -1,6 +1,7 @@
 class VocabulariesController < ApplicationController
   def index
     @vocabularies = Vocabulary.all.order('title ASC')
+    @random = Vocabulary.order("RAND()").limit(5)
     @html = Vocabulary.where(genre_id: 1)
     @css = Vocabulary.where(genre_id: 2)
     @ruby = Vocabulary.where(genre_id: 3)

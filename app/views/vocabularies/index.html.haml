@@ -5,6 +5,10 @@
   .main
     .new
       = link_to "新規登録", new_vocabulary_path
+    .remember
+      %h4 復習単語
+      -@random.each do |r|
+        = link_to "#{r.title}", vocabulary_path(r.id)
     .lists
       .list
         %h3 HTML
